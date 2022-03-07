@@ -8,10 +8,10 @@ def swap(a, b, c):
     b = a
     a = c
     c = temp
-    return print("A = " + a + "\n" + "B = " + b + "\n" + "C = " + c)
+    return print("\n" + "A = " + a + "\n" + "B = " + b + "\n" + "C = " + c)
 
 
 a = input("A = ")
 b = input("B = ")
 c = input("C = ")
-print(swap(a, b, c))
+swap(a, b, c)
