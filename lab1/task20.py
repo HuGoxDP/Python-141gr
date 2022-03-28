@@ -3,7 +3,7 @@
 """
 
 
-def assign1(x: float) -> float:
+def assign1():
     x = float(input("Enter a positive float x = "))
     
     while x <= 0:
@@ -11,7 +11,7 @@ def assign1(x: float) -> float:
 
     temp = int(x)
     x -= temp
-    d = x * 10
+    d = int (x * 10)
     return print("d = " + (str(d)))
 
 

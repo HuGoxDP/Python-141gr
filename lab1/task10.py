@@ -4,10 +4,10 @@
 """
 
 
-def bite_to_kilobytes():
-    print("Enter a positive number")
-    a = int(input("a = "))
-    return print(int(a / 1024))
+def byte_to_kilobytes():
+    print("Enter number of bytes")
+    a = int(input("bytes = "))
+    return print("kilobyte = " + str(int(a / 1024)))
 
 
-bite_to_kilobytes()
+byte_to_kilobytes()
