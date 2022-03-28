@@ -2,7 +2,8 @@
 наприклад: 256 - "двісті п'ятдесят шість", 814 - "вісімсот чотирнадцять»."""
 
 
-def des_line(x: int):
+def des_line():
+    x = int(input("x = "))
     description = "x ="
 
     match(int(x / 100)):
@@ -25,7 +26,7 @@ def des_line(x: int):
         case 9:
             description += " Дев'ятсот"
         case _:
-            print("error")
+            return print("error")
 
     if(int(x % 100) < 20 and (x % 100) > 9):
         match(int(x % 100)):
@@ -92,8 +93,4 @@ def des_line(x: int):
     return print(description)
 
 
-x = int(input("x = "))
-print(x % 100)
-print(x % 10)
-print(x / 100)
-des_line(x)
+des_line()

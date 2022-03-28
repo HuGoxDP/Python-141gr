@@ -3,7 +3,10 @@
 """
 
 
-def three_digits(x: float, y: float, z: float):
+def three_digits():
+    x = float(input('x = '))
+    y = float(input('y = '))
+    z = float(input('z = '))
     if x > y and y > z:
         x *= 2
         y *= 2
@@ -16,7 +19,4 @@ def three_digits(x: float, y: float, z: float):
         return print("x = " + str(x) + " y = " + str(y) + " z = " + str(z))
 
 
-x = float(input('x = '))
-y = float(input('y = '))
-z = float(input('z = '))
-three_digits(x, y, z)
+three_digits()
