@@ -2,11 +2,11 @@
 import math
 
 
-def fn(x: int) -> int:
+def fn():
+    print("Enter a number")
+    x = input("x = ")
     y = 3 * pow(int(x), 6) + 6 * pow(int(x), 2) + 7
-    return int(y)
+    return print(int(y))
 
 
-print("Enter a number")
-x = input("x = ")
-print(fn(x))
+fn()

@@ -3,7 +3,11 @@ B - в C, C - в A, і вивести нові значення змінних A
 """
 
 
-def swap(a, b, c):
+def swap():
+    print("Enter a numbers")
+    a = input("A = ")
+    b = input("B = ")
+    c = input("C = ")
     temp = b
     b = a
     a = c
@@ -11,8 +15,4 @@ def swap(a, b, c):
     return print("\n" + "A = " + a + "\n" + "B = " + b + "\n" + "C = " + c)
 
 
-print("Enter a numbers")
-a = input("A = ")
-b = input("B = ")
-c = input("C = ")
-swap(a, b, c)
+swap()

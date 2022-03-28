@@ -4,14 +4,15 @@
 
 
 def assign1(x: float) -> float:
+    x = float(input("Enter a positive float x = "))
+    
+    while x <= 0:
+        x = float(input("Enter x > 0 " + "\n" + "x = "))
+
     temp = int(x)
     x -= temp
     d = x * 10
-    return (int(d))
+    return print("d = " + (str(d)))
 
 
-x = float(input("Enter a positive float x = "))
-while x <= 0:
-    x = float(input("Enter x > 0 " + "\n" + "x = "))
-
-print("d = " + (str(assign1(x))))
+assign1()
