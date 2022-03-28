@@ -11,6 +11,7 @@ def swap(a, b, c):
     return print("\n" + "A = " + a + "\n" + "B = " + b + "\n" + "C = " + c)
 
 
+print("Enter a numbers")
 a = input("A = ")
 b = input("B = ")
 c = input("C = ")

@@ -8,5 +8,6 @@ def bite_to_kilobytes(a: int) -> int:
     return(a / 1024)
 
 
+print("Enter a positive number")
 a = int(input("a = "))
 print(int(bite_to_kilobytes(a)))

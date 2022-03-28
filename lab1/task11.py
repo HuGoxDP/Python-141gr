@@ -7,5 +7,6 @@ def fn(x: int) -> int:
     return int(y)
 
 
+print("Enter a number")
 x = input("x = ")
 print(fn(x))

@@ -10,7 +10,7 @@ def assign1(x: float) -> float:
     return (int(d))
 
 
-x = float(input("x = "))
+x = float(input("Enter float x = "))
 
 while x <= 0:
     x = float(input("Enter x > 0 " + "\n" + "x = "))
