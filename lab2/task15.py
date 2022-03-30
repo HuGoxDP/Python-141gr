@@ -2,16 +2,18 @@
 дана точка колі, якщо його центр знаходиться на початку координат."""
 
 
-def coordinates():
-    print("введіть координати ")
-    x = float(input("x = "))
-    y = float(input("y = "))
-    print("введіть радіус кола")
-    r = float(input("r = "))
+def main(x, y, r):
     if r**2 >= x**2 + y**2:
-        return print("Дана точка належить колі")
+        result = "Дана точка належить колі"
+        return result
     else:
-        return print("Дана точка не належить колі")
+        result = "Дана точка не належить колі"
+        return result
 
 
-coordinates()
+print("введіть координати ")
+x = float(input("x = "))
+y = float(input("y = "))
+r = float(input("введіть радіус кола r = "))
+result = main(x, y, r)
+print (result)

@@ -2,15 +2,22 @@
 рядок-опис виду «парне двозначне число», «непарне тризначне число» і т. Д"""
 
 
-def pr():
-    print("enter any number from 1 - 999")
-    digits = int(input())
+def getnum():
+    digits = int(input("Enter any number from 1 - 999\n"))
+    return digits
+
+
+def check(digits: int) -> int:
+    while True:
+        if 0 < digits < 1000:
+            break
+        else:
+            digits = int(input("Enter any number from 1 - 999\n x = "))
+    return digits
+
+
+def calcs(digits: int) -> str:
     prtext = "Це "
-
-    while digits < 1 or digits > 999:
-        print("Enter any number from 1 - 999")
-        digits = int(input())
-
     if digits % 2 == 0:
         prtext += "парне "
     else:
@@ -21,8 +28,15 @@ def pr():
         prtext += "двозначне число"
     elif digits <= 999:
         prtext += "тризначне число"
+    return prtext
 
-    return print(prtext)
+
+def pr():
+    x = getnum()
+    digits = check(x)
+    prtext = calcs(digits)
+    return prtext
 
 
-pr()
+result = pr()
+print(result)

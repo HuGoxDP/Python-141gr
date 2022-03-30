@@ -2,18 +2,20 @@
 «нульове число», «додатне непарне число» і т. д."""
 
 
-def digits_description():
-    x = int(input("x = "))
+def digits_description(x: int):
+    result = str(x)
     if x == 0:
-        return print(str(x) + " = нульове число ")
+        return result + " = нульове число "
     elif x > 0 and x % 2 != 0:
-        return print(str(x) + " = додатне непарне число ")
+        return result + " = додатне непарне число "
     elif x > 0 and (x % 2) == 0:
-        return print(str(x) + " = додатне парне число ")
+        return result + " = додатне парне число "
     elif x < 0 and (x % 2) != 0:
-        return print(str(x) + " = від'ємне непарне число ")
+        return result + " = від'ємне непарне число "
     elif x < 0 and x % 2 == 0:
-        return print(str(x) + " = від'ємне парне число ")
+        return result + " = від'ємне парне число "
 
 
-digits_description()
+x = int(input("x = "))
+result = digits_description()
+print(result)

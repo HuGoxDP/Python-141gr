@@ -2,11 +2,26 @@
 наприклад: 256 - "двісті п'ятдесят шість", 814 - "вісімсот чотирнадцять»."""
 
 
-def des_line():
+def getnum():
     x = int(input("x = "))
-    description = "x ="
+    return x
 
-    match(int(x / 100)):
+
+def check(x):
+    while True:
+       if 99 < x < 1000:
+           break
+       else:
+           x = int(input("""Error \nplease enter x, which 99 < x < 1000  \nx = """))
+    return x
+
+
+def des_line():
+    x = getnum()
+    chekedx = check(x)
+    description = "x ="
+    
+    match(int(chekedx / 100)):
         case 1:
             description += " Сто"
         case 2:
@@ -25,11 +40,9 @@ def des_line():
             description += " Вісімсот"
         case 9:
             description += " Дев'ятсот"
-        case _:
-            return print("error")
 
-    if(int(x % 100) < 20 and (x % 100) > 9):
-        match(int(x % 100)):
+    if(int(chekedx % 100) < 20 and (chekedx % 100) > 9):
+        match(int(chekedx % 100)):
             case 10:
                 description += " Десять"
             case 11:
@@ -51,8 +64,8 @@ def des_line():
             case 19:
                 description += " Дев’ятнадцять"
 
-    elif(int((x % 100) > 19)):
-        match(int((x % 100) - (x % 10))):
+    elif(int((chekedx % 100) > 19)):
+        match(int((chekedx % 100) - (chekedx % 10))):
             case 20:
                 description += " Двадцять"
             case 30:
@@ -70,8 +83,8 @@ def des_line():
             case 90:
                 description += " Дев’яносто"
 
-    if(int(x % 100) < 10 or int(x % 100) > 19 and (x % 100) > 0):
-        match(int(x % 10)):
+    if(int(chekedx % 100) < 10 or int(chekedx % 100) > 19 and (chekedx % 100) > 0):
+        match(int(chekedx % 10)):
             case 1:
                 description += " Один"
             case 2:
@@ -90,7 +103,8 @@ def des_line():
                 description += " Вісім"
             case 9:
                 description += " Дев’ять"
-    return print(description)
+    return description
 
 
-des_line()
+description = des_line()
+print(description)
