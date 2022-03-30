@@ -106,5 +106,5 @@ def des_line():
     return description
 
 
-description = des_line()
-print(description)
+descriptions = des_line()
+print(descriptions)

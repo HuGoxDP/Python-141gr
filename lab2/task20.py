@@ -38,5 +38,5 @@ def pr():
     return prtext
 
 
-result = pr()
-print(result)
+results = pr()
+print(results)

@@ -12,8 +12,8 @@ def main(x, y, r):
 
 
 print("введіть координати ")
-x = float(input("x = "))
-y = float(input("y = "))
-r = float(input("введіть радіус кола r = "))
-result = main(x, y, r)
-print (result)
+x1 = float(input("x = "))
+y1 = float(input("y = "))
+r1 = float(input("введіть радіус кола r = "))
+results = main(x1, y1, r1)
+print (results)

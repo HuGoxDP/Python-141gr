@@ -19,8 +19,8 @@ def three_digits(x, y, z) -> float:
         return result
 
 
-x = float(input('x = '))
-y = float(input('y = '))
-z = float(input('z = '))
-result = three_digits(x, y, z)
-print (result)
+x1 = float(input('x = '))
+y1 = float(input('y = '))
+z1 = float(input('z = '))
+results = three_digits(x1, y1, z1)
+print (results)

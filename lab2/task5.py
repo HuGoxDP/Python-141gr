@@ -16,6 +16,6 @@ def digits_description(x: int):
         return result + " = від'ємне парне число "
 
 
-x = int(input("x = "))
-result = digits_description(x)
-print(result)
+num = int(input("x = "))
+results = digits_description(num)
+print(results)
