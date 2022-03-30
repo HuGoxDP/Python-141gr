@@ -17,5 +17,5 @@ def digits_description(x: int):
 
 
 x = int(input("x = "))
-result = digits_description()
+result = digits_description(x)
 print(result)
