@@ -2,8 +2,10 @@
 """
 
 def culcul(a, b):
+    s = ""
     for i in range(b):
-        print(a)
+        s += str(a) + " "
+    return s
 
 
 def check(x: int):
@@ -24,8 +26,10 @@ def lop():
 def lopoper():
     a, b = lop()
     b = check(b)
-    culcul(a, b)
+    res = culcul(a, b)
+    return res
 
 
 
-lopoper()
+rusult = lopoper()
+print(rusult)
