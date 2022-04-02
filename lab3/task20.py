@@ -17,13 +17,11 @@ def culcul(z: float, s: float):
             temp = z
             z = (temp1 + 2 * temp) / a
             a += 1
-            print(z)
         else:
             temp1 = temp
             temp = z
             z = (temp1 + 2 * temp) / a
             a += 1
-            print(z)
     return a, temp, z
 
 
