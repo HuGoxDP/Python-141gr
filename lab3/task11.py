@@ -31,6 +31,5 @@ def lopoper():
     return res
 
 
-
 rusult = lopoper()
 print(rusult)
